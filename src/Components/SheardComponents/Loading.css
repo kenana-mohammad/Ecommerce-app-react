@@ -1,0 +1,54 @@
+.dots-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.dots-container {
+    display: flex;
+    gap: 16px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff6f91, #c77dff, #ff9de2);
+    background-size: 200% 200%;
+    animation: bounce 1.2s infinite alternate, gradientShift 4s infinite linear;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.4s, 0s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.8s, 0s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(-24px);
+        opacity: 1;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

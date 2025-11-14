@@ -1,0 +1,21 @@
+:root {
+    --color-bg-card: #fff0f5;
+    --color-border: #ffb6c1;
+    --color-text: #333;
+    --color-text-muted: #666;
+    --color-price: #c71585;
+    --card-height: 450px;
+    --img-height: 250px;
+    --font-family: 'Arial', sans-serif;
+    --spinner-size: 60px;
+    --spinner-border: 6px;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bg-search {
+    background-color: var(--c);
+}
