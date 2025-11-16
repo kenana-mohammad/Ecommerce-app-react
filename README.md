@@ -1,37 +1,27 @@
+
+---
+
+## ✨ نسخة كاملة جاهزة للاستخدام داخل ملف الـ README:
+
+```md
 # React + Vite
 
-# مشروع عرض المنتحات
-يقوم بعرض المنتجات مع امكانية التصفية والبحث مع مراعاة اهادة استخدام الcompmonent ,والclean code 
+# مشروع عرض المنتجات
+يقوم بعرض المنتجات مع إمكانية التصفية والبحث مع مراعاة إعادة استخدام ال Components و Clean Code.
+
 ---
-## المزايا 
- عرض المنتجات -
- - البحث مع ميزة **debounce**
- - استخدام useCallback لتحسين الاداء
- - استخدام useMemo لمنع اعادة احساب
- ## installation
- ``bash
- npm install
- npm run dev
- ``
-  
- ---
- #hooks debounce
- `` 
- import { useState, useEffect } from "react";
 
-export default function useDebounce(value, delay = 300) {
-  const [debouncedValue, setDebouncedValue] = useState(value);
+## المزايا
+- عرض المنتجات  
+- البحث مع ميزة **debounce**  
+- استخدام **useCallback** لتحسين الأداء  
+- استخدام **useMemo** لمنع إعادة الحساب  
 
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
+---
 
-    return () => clearTimeout(handler);
-  }, [value, delay]);
+## Installation
 
-  return debouncedValue;
-}
-
-
- ``
+```bash
+npm install
+npm run dev
+```
